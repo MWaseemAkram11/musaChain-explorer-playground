@@ -1,0 +1,21 @@
+.header-section{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-section span{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.navi-section ul{
+    /* display: flex; */
+    list-style: disc;
+    list-style: none;
+}
+.cards-section{
+    margin: 10px 10px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+
+}

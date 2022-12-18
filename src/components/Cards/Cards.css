@@ -1,0 +1,13 @@
+.cards-section{
+    flex-direction: column;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grd{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0% auto;
+}

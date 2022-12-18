@@ -1,0 +1,16 @@
+/* Block Elements Css */
+.block-elements {
+    display: flex;
+    column-gap: 20px;
+}
+.left-side, .right-side{
+    width: 50%;
+    border: 1px solid #e7eaf3;
+    border-radius: 10px;
+    text-align: left;
+}
+.head {
+    font-size: .875rem;
+    font-weight: 600;
+    padding: 10px 20px;
+}
