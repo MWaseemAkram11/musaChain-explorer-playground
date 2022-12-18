@@ -17,12 +17,12 @@ function NavScrollExample() {
     <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src={MusaLogo} className="logo-photo"/>Musa
+          <img src={MusaLogo} className="logo-photo"/><span className='logo-text'>Musa Blockchain</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className=" my-2 my-lg-0"
             style={{ maxHeight: '100px', float:"right" }}
             navbarScroll
           >

@@ -6,9 +6,11 @@
 
 .srach-section {
     position: absolute;
-    bottom: 70%;
+    /* bottom: 70%; */
     left: 7%;
     width: 40%;
+    top: 16%;
+    transform: translate(10px, 30px);
 }
 .search-p{
     text-align: left;

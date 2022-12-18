@@ -13,9 +13,6 @@ import logo4 from "../../assets/images/logo4.svg";
 const Banner = ()=> {
   return (
     <div className='banner-container'>
-      <div className='banner-img-section'>
-        <img  className='photo' src={`https://etherscan.io/images/svg/components/abstract-shapes-20.svg?v=1`} alt="banner-image" />
-      </div>
       <div className='srach-section'>
         <p className='search-p'>
           The Musa Blockchain Explorer
@@ -34,6 +31,10 @@ const Banner = ()=> {
           </InputGroup>
         </div>
       </div>
+      <div className='banner-img-section'>
+        <img  className='photo' src={`https://etherscan.io/images/svg/components/abstract-shapes-20.svg?v=1`} alt="banner-image" />
+      </div>
+      
     <section className='price-stats'>
       <div className='left-stats'>
         <div className='left-main'>
@@ -43,7 +44,7 @@ const Banner = ()=> {
             </div>
             <div>
               <p className="para">
-                  ETHER PRICE <br/>
+                  Musa Price <br/>
                 $1,179.70 @ 0.070688 BTC (-2.01%)
               </p>
             </div>
@@ -54,7 +55,7 @@ const Banner = ()=> {
             </div>
             <div>
               <p className="para">
-                  ETHER PRICE <br/>
+                  Musa Price <br/>
                 $1,179.70 @ 0.070688 BTC (-2.01%)
               </p>
             </div>
@@ -65,7 +66,7 @@ const Banner = ()=> {
             </div>
             <div>
               <p className="para">
-                  ETHER PRICE <br/>
+                  Musa Price <br/>
                 $1,179.70 @ 0.070688 BTC (-2.01%)
               </p>
             </div>
@@ -76,7 +77,7 @@ const Banner = ()=> {
             </div>
             <div>
               <p className="para">
-                  ETHER PRICE <br/>
+                  Musa Price <br/>
                 $1,179.70 @ 0.070688 BTC (-2.01%)
               </p>
             </div>

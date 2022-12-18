@@ -2,12 +2,18 @@
     display: flex;
     justify-content: space-between;
 }
+#navbarScroll {
+    display: flex;
+    justify-content: end;
+}
+.logo-photo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
 
-.logo-photo{
-    height: 50px;
-    width:60px;
-    border-radius: 20px;
-
+}
+.logo-text{
+    padding-left: 10px;
 }
 .logo-section span{
     color: white;
