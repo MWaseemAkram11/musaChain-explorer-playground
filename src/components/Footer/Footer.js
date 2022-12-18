@@ -1,104 +1,78 @@
 import React from 'react';
-import "./Footer.css"
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer ,CDBBox} from 'cdbreact';
+import MusaLogo from "../../assets/images/musa-logo.png";
 
-import footerlogo from "../../assets/images/ether-logo.png"
-
-const Footer = () => {
+ const Footer = () => {
   return (
-    <div className='footer-sec'>
-      <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='mt-2'>
-        <MDBContainer className='text-center text-md-start mt-5 mt-2'>
-          <MDBRow className='mt-3'>
-            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon color='secondary' icon='gem' className='me-3' />
-                EtherScan
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
-              </p>
-            </MDBCol>
-
-            <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  React
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-                <MDBIcon color='secondary' icon='home' className='me-2' />
-                New York, NY 10012, US
-              </p>
-              <p>
-                <MDBIcon color='secondary' icon='envelope' className='me-3' />
-                info@example.com
-              </p>
-              <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
-              </p>
-              <p>
-                <MDBIcon color='secondary' icon='print' className='me-3' /> + 01 234 567 89
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </section>
-
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
-      </div>
-    </MDBFooter>
+    <div className='footer-parent'>
+      <CDBFooter className="shadow">
+      <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
+        <CDBBox display="flex" justifyContent="between" className="flex-wrap">
+          <CDBBox>
+            <a href="/" className="d-flex align-items-center p-0 text-dark">
+              <img alt="logo" src={MusaLogo} width="40px" />
+              <span className="ml-3 h5 font-weight-bold">Musa</span>
+            </a>
+            <p className="my-3" style={{ width: '250px' }}>
+              We are creating High Quality Resources and tools to Aid developers during the
+              developement of their projects
+            </p>
+          </CDBBox>
+          <CDBBox>
+            <p className="h5 mb-4" style={{ fontWeight: '600' }}>
+              Musa Links
+            </p>
+            <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0' }}>
+              <CDBFooterLink href="/">Resources</CDBFooterLink>
+              <CDBFooterLink href="/">About Us</CDBFooterLink>
+              <CDBFooterLink href="/">Contact</CDBFooterLink>
+              <CDBFooterLink href="/">Blog</CDBFooterLink>
+            </CDBBox>
+          </CDBBox>
+          <CDBBox>
+            <p className="h5 mb-4" style={{ fontWeight: '600' }}>
+              Help
+            </p>
+            <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
+              <CDBFooterLink href="/">Support</CDBFooterLink>
+              <CDBFooterLink href="/">Sign Up</CDBFooterLink>
+              <CDBFooterLink href="/">Sign In</CDBFooterLink>
+            </CDBBox>
+          </CDBBox>
+          <CDBBox>
+            <p className="h5 mb-4" style={{ fontWeight: '600' }}>
+              Products
+            </p>
+            <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
+              <CDBFooterLink href="/">Windframe</CDBFooterLink>
+              <CDBFooterLink href="/">Loop</CDBFooterLink>
+              <CDBFooterLink href="/">Contrast</CDBFooterLink>
+            </CDBBox>
+          </CDBBox>
+        </CDBBox>
+        <CDBBox
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          style={{ width: '100%' }}
+          className="mx-auto mt-4"
+        >
+          <small className="text-center" style={{ width: '50%' }}>
+            &copy; Musa, 2022. All rights reserved.
+          </small>
+          <CDBBtn flat color="dark" className="p-2">
+            <CDBIcon fab icon="facebook-f" />
+          </CDBBtn>
+          <CDBBtn flat color="dark" className="mx-3 p-2">
+            <CDBIcon fab icon="twitter" />
+          </CDBBtn>
+          <CDBBtn flat color="dark" className="p-2">
+            <CDBIcon fab icon="instagram" />
+          </CDBBtn>
+        </CDBBox>
+      </CDBBox>
+      </CDBFooter>
     </div>
   );
 };
-export default Footer;
+export default Footer
